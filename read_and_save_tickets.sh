@@ -17,7 +17,7 @@ do
 	esac
 done < "$input"
 
-read -p "Abo Id($aboid_file):" aboId
+read -p "Abo Id($aboid_file):" aboid
 read -p "Email($email_file):" email
 read -p "kvpid($kvpid_file):" kvpid
 
