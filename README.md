@@ -19,3 +19,7 @@ email=mail@example.com
 
 The list of supported provides can be requested by curl:
 curl --compressed -s -H "accept: content/json" https://deutschlandticket.insa.de/srv/dtick_srv/kvp/list | jq
+
+# Windows
+
+If the skricpt doesn't work, please read this issue: https://github.com/fz72/read_insa_tickets/issues/2
