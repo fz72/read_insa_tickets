@@ -83,6 +83,9 @@ echo $content | jq -c '.data.ticket_list[]' | while read i; do
 
 	filename=$(echo "ticket_"$validfrom"_"$productname"_"$uuid".png")
 
+ 	filename=$(echo $filename | tr -d '[:blank:]')
+  	filename=$(echo $filename | tr ':' '_')
+
 	base64 -d <<< "$qrcode" >> "$filename"
 
 	echo "Ticket gesichert:" $filename
